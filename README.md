@@ -67,12 +67,6 @@ python tmdb_clustering.py
 
 ---
 
-## 🔍 Personal Observation
-
-Running both algorithms on this dataset revealed that K-Means with k=10 performed better overall, as the silhouette score steadily improved with each additional cluster rather than peaking early, suggesting movies naturally spread across many fine-grained groups — from low-budget indie films to big-budget blockbusters. DBSCAN, while slightly weaker on metrics, offered something K-Means could not: it flagged 213 movies (4.4%) as outliers that genuinely don't belong to any cluster, such as films with unusual genre combinations or mismatched budget-to-revenue ratios. In this case, K-Means is better for clean segmentation and interpretation, while DBSCAN is more honest about the noise in the data.
-
----
-
 ## 📦 Dependencies
 
 ```
